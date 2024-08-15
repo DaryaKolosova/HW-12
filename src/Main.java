@@ -44,12 +44,14 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
         Author author1 = new Author("Люк", "Бессон");
         Author author2 = new Author("Зигмунд", "Фрейд");
         Book book1 = new Book("Артур и минипуты", author1, 2002);
         Book book2 = new Book("Толкование сновидений", author2, 1913);
+
+        //изменение года публикации
+        book1.setPublicationYear(2010);
 
         System.out.println("Название книги: " + book1.getTitle() + "\nАвтор книги: " + book1.getAuthor().getFirstName() + " " + book1.getAuthor().getLastName() + "\nГод публикации: " + book1.getPublicationYear());
         System.out.println();
